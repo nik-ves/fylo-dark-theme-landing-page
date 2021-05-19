@@ -1,0 +1,41 @@
+.header {
+    padding-bottom: 5rem;
+    background-color: $color-dark-blue-1;
+    padding-top: 10rem;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__image-box {
+        display: flex;
+        flex-grow: 3;
+    }
+
+    &__nav {
+        list-style-type: none;
+        display: flex;
+        font-size: 1.4rem;
+        color: $color-white;
+        flex: 1;
+        justify-content: space-between;
+        font-family: $font-raleway;
+        align-items: center;
+      
+        &--link:link,
+        &--link:visited {
+            font-size: 1.4rem;
+            color: $color-white;
+            text-decoration: none;
+            display: block;
+            border: 1px solid transparent;
+        }
+    
+        &--link:hover,
+        &--link:active {
+            color: $color-white;
+            border-bottom: 1px solid $color-white;
+        }
+    }
+}
