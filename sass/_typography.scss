@@ -2,12 +2,20 @@
     color: $color-white;
     font-size: 4rem;
     font-family: $font-raleway;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
+    }
 }
 
 .heading-2 {
     color: $color-white;
     font-size: 3rem;
     font-family: $font-raleway;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 2rem;
+    }
 }
 
 .heading-3 {
@@ -37,6 +45,11 @@
 
     &--small {
         padding: 1rem 3rem;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 90%;
+            margin-left: 5%;
+        }
     }
 
     &:hover {

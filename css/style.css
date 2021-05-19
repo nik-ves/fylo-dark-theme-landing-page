@@ -12,6 +12,15 @@ html {
 
 .container-1 {
   padding: 0 15rem; }
+  @media only screen and (max-width: 81.5em) {
+    .container-1 {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 69em) {
+    .container-1 {
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .container-1 {
+      padding: 0 3rem; } }
 
 .container-2 {
   max-width: 80rem;
@@ -26,11 +35,17 @@ html {
   color: white;
   font-size: 4rem;
   font-family: "Raleway", sans-serif; }
+  @media only screen and (max-width: 50em) {
+    .heading-1 {
+      font-size: 3rem; } }
 
 .heading-2 {
   color: white;
   font-size: 3rem;
   font-family: "Raleway", sans-serif; }
+  @media only screen and (max-width: 50em) {
+    .heading-2 {
+      font-size: 2rem; } }
 
 .heading-3 {
   color: white;
@@ -54,6 +69,10 @@ html {
     padding: 1.5rem 8rem; }
   .btn--small {
     padding: 1rem 3rem; }
+    @media only screen and (max-width: 81.5em) {
+      .btn--small {
+        width: 90%;
+        margin-left: 5%; } }
   .btn:hover {
     background-color: #339ecc;
     border: 1px solid #339ecc; }
@@ -62,12 +81,34 @@ html {
   padding-bottom: 5rem;
   background-color: #1c2431;
   padding-top: 10rem; }
+  @media only screen and (max-width: 50em) {
+    .header {
+      padding-top: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding: 2rem 0; } }
   .header__content {
     display: flex;
     justify-content: space-between; }
   .header__image-box {
     display: flex;
     flex-grow: 3; }
+    @media only screen and (max-width: 81.5em) {
+      .header__image-box {
+        flex-grow: 2; } }
+    @media only screen and (max-width: 69em) {
+      .header__image-box {
+        flex-grow: 1.5; } }
+    @media only screen and (max-width: 50em) {
+      .header__image-box {
+        flex-grow: 1; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__image-box {
+        width: 1%; } }
+  @media only screen and (max-width: 37.5em) {
+    .header__image {
+      height: 50%;
+      align-self: center; } }
   .header__nav {
     list-style-type: none;
     display: flex;
@@ -77,6 +118,10 @@ html {
     justify-content: space-between;
     font-family: "Raleway", sans-serif;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .header__nav {
+        flex: 1.5;
+        width: 100%; } }
     .header__nav--link:link, .header__nav--link:visited {
       font-size: 1.4rem;
       color: white;
@@ -95,6 +140,16 @@ html {
   background-position: bottom;
   background-size: 100% 40rem;
   padding-bottom: 10rem; }
+  @media only screen and (max-width: 81.5em) {
+    .security {
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 50em) {
+    .security {
+      background-image: url("../images/bg-curvy-mobile.svg");
+      background-size: 100%; } }
+  @media only screen and (max-width: 37.5em) {
+    .security {
+      margin-top: -2rem; } }
   .security__image-box {
     width: 90%; }
   .security__image {
@@ -104,6 +159,9 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 37.5em) {
+      .security__content {
+        margin: 2rem; } }
   .security__text {
     text-align: center;
     display: flex;
@@ -122,6 +180,9 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
+    @media only screen and (max-width: 81.5em) {
+      .information__content {
+        justify-content: center; } }
   .information__box {
     width: 40rem;
     padding: 3rem; }
@@ -137,6 +198,9 @@ html {
 .productive {
   margin-top: 10rem;
   overflow: hidden; }
+  @media only screen and (max-width: 81.5em) {
+    .productive {
+      margin-top: 5rem; } }
   .productive__image-box {
     max-width: 100%;
     overflow: hidden; }
@@ -151,6 +215,13 @@ html {
   .productive__box {
     max-width: 65rem;
     padding: 10rem 5rem 0 5rem; }
+    @media only screen and (max-width: 98em) {
+      .productive__box {
+        padding: 5rem 0;
+        text-align: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .productive__box {
+        text-align: left; } }
   .productive__text {
     margin: 2rem 0;
     color: white;
@@ -165,10 +236,16 @@ html {
 
 .testimonial {
   margin-top: 15rem; }
+  @media only screen and (max-width: 81.5em) {
+    .testimonial {
+      margin-top: 5rem; } }
   .testimonial__content {
     display: flex;
     justify-content: space-between;
     z-index: 10; }
+    @media only screen and (max-width: 50em) {
+      .testimonial__content {
+        flex-direction: column; } }
   .testimonial__box {
     max-width: 31%;
     padding: 4rem 2rem 0 2rem;
@@ -176,6 +253,9 @@ html {
     border-radius: 5px;
     position: relative;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 50em) {
+      .testimonial__box {
+        max-width: 100%; } }
   .testimonial__quotes {
     position: absolute;
     top: -30px;
@@ -220,25 +300,52 @@ html {
   .access__input-box {
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 81.5em) {
+      .access__input-box {
+        flex-direction: column; } }
   .access__input {
     padding: 2rem;
     border-radius: 100px;
     width: 50%;
     margin-right: 2rem;
-    outline: none; }
+    outline: none;
+    border: 1px solid white; }
+    @media only screen and (max-width: 81.5em) {
+      .access__input {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2rem;
+        padding: 1.5rem; } }
 
 .footer {
   padding-top: 15rem;
   padding-bottom: 15rem;
   background-color: #0b1523; }
+  @media only screen and (max-width: 81.5em) {
+    .footer {
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 26.5em) {
+    .footer {
+      padding-bottom: 3rem; } }
   .footer__image {
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 50em) {
+      .footer__image {
+        text-align: center; } }
   .footer__box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
+    @media only screen and (max-width: 50em) {
+      .footer__box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: left; } }
   .footer__location {
     display: flex; }
+    @media only screen and (max-width: 50em) {
+      .footer__location {
+        margin-bottom: 1rem; } }
     .footer__location--image {
       height: 1.5rem;
       margin-right: 2.5rem;
@@ -249,15 +356,24 @@ html {
       font-family: "Raleway", sans-serif;
       max-width: 30rem;
       line-height: 2rem; }
+      @media only screen and (max-width: 50em) {
+        .footer__location--text {
+          max-width: 100%; } }
   .footer__contact {
     display: flex;
     flex-direction: column; }
     .footer__contact--box {
       display: flex;
       margin-bottom: 2rem; }
+      @media only screen and (max-width: 50em) {
+        .footer__contact--box {
+          margin-bottom: 2rem; } }
     .footer__contact--image {
       height: 1.5rem;
       margin-right: 2.5rem; }
+      @media only screen and (max-width: 50em) {
+        .footer__contact--image {
+          margin-right: 2rem; } }
     .footer__contact--text {
       font-size: 1.4rem;
       color: white;
@@ -265,6 +381,9 @@ html {
   .footer__links {
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 50em) {
+      .footer__links {
+        margin-bottom: 2rem; } }
   .footer__nav {
     list-style: none;
     color: white;
@@ -280,6 +399,12 @@ html {
     .footer__nav--link:hover, .footer__nav--link:active {
       color: white;
       font-family: "Open Sans", sans-serif; }
+  @media only screen and (max-width: 50em) {
+    .footer__social {
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      margin-left: 30%; } }
   .footer__social--image {
     height: 1.5rem;
     border: 1px solid black;

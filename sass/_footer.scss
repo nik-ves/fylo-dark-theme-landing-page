@@ -3,18 +3,40 @@
     padding-bottom: 15rem;
     background-color: $color-dark-blue-3;
 
+    @media only screen and (max-width: $bp-large) {
+        padding-bottom: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding-bottom: 3rem;
+    }
+
     &__image {
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            text-align: center;
+        }
     }
 
     &__box {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+        }
     }
 
     &__location {
         display: flex;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 1rem;
+        }
 
         &--image {
             height: 1.5rem;
@@ -28,6 +50,10 @@
             font-family: $font-raleway;
             max-width: 30rem;
             line-height: 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                max-width: 100%;
+            }
         }
     }
 
@@ -38,11 +64,19 @@
         &--box {
             display: flex;
             margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-bottom: 2rem;
+            }
         }
 
         &--image {
             height: 1.5rem;
             margin-right: 2.5rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-right: 2rem;
+            }
         }
 
         &--text {
@@ -55,6 +89,10 @@
     &__links {
         display: flex;
         flex-direction: column;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__nav {
@@ -83,6 +121,12 @@
     }
 
     &__social {
+        @media only screen and (max-width: $bp-small) {
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin-left: 30%;
+        }
 
         &--image {
             height: 1.5rem;

@@ -1,10 +1,18 @@
 .testimonial {
     margin-top: 15rem;
 
+    @media only screen and (max-width: $bp-large) {
+        margin-top: 5rem;
+    }
+
     &__content {
         display: flex;
         justify-content: space-between;
         z-index: 10;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
     }
 
     &__box {
@@ -14,6 +22,10 @@
         border-radius: 5px;
         position: relative;
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            max-width: 100%;
+        }
     }
 
     &__quotes {

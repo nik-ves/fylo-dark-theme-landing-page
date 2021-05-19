@@ -26,6 +26,10 @@
     &__input-box {
         display: flex;
         justify-content: center;
+
+        @media only screen and (max-width: $bp-large) {
+            flex-direction: column;
+        }
     }
 
     &__input {
@@ -34,5 +38,13 @@
         width: 50%;
         margin-right: 2rem;
         outline: none;
+        border: 1px solid $color-white;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 90%;
+            margin-left: 5%;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+        }
     }
 }

@@ -14,6 +14,14 @@ $color-white: hsl(0, 0%, 100%);
 $font-open-sans: 'Open Sans', sans-serif;
 $font-raleway: 'Raleway', sans-serif;
 
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 98em;  // 1568px
+$bp-large: 81.5em;  // 1034px
+$bp-medium: 69em;   // 1104px
+$bp-small: 50em; // 800px
+$bp-smaller: 37.5em; // 600px
+$bp-smallest: 26.5em; // 424px
+
 *,
 *::before,
 *::after {
@@ -26,10 +34,26 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // Makes 1rem = 10px -- 10px/16px = 62.5%
     background-color: $color-dark-blue-2;
+
+    @media only screen and (max-width: $bp-large) {
+        
+    }
 }
 
 .container-1 {
     padding: 0 15rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 0 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 0 5rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        padding: 0 3rem;
+    }
 }
 
 .container-2 {
